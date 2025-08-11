@@ -1,0 +1,36 @@
+CREATE TABLE students10 (
+    student_id INT,
+    name VARCHAR(50),
+    course VARCHAR(50),
+    marks INT,
+    age INT,
+    city VARCHAR(50),
+    scholarship INT
+);
+
+INSERT INTO students10 VALUES 
+(1, 'Ravi', 'Math', 85, 20, 'Chennai', NULL),
+(2, 'Priya', 'Science', 92, 21, 'Delhi', 10000),
+(3, 'Amit', 'English', 75, 19, 'Mumbai', 5000),
+(4, 'Sneha', 'Math', 88, 22, 'Kolkata', NULL),
+(5, 'John', 'History', 67, 20, 'Chennai', NULL),
+(6, 'Meena', 'Science', 95, 23, 'Delhi', 15000),
+(7, 'Karan', 'English', 70, 20, 'Bangalore', 3000),
+(8, 'Divya', 'History', 80, 22, 'Mumbai', NULL);
+
+1.Display students with marks between 70 and 90.
+2.List students aged between 20 and 22.
+3.Find students whose name starts with 'P'.
+4.Find students whose city contains 'ai'.
+5.Find names where the second character is 'r'.
+6.Show top 3 students with highest marks.
+7.Show students who have a scholarship.
+8.Show students only if there is at least one student from 'Delhi'.
+9.Show students with marks greater than ANY student in the 'History' course.
+10.Show students with marks greater than ALL students in the 'English' course.
+11.Show students in 'Math' course AND age > 21.
+12.Show students in 'Science' OR 'English' course.
+13.Show students NOT from 'Mumbai'.
+14.Show students who don’t have a scholarship.
+15.Replace NULL scholarship with 0 using IFNULL.
+16.Replace NULL scholarship with 0 using COALESCE.

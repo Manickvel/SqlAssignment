@@ -1,0 +1,89 @@
+-- Create Database
+CREATE DATABASE cts_practice;
+USE cts_practice;
+
+-- Employees Table
+CREATE TABLE Employees (
+    EmpID INT PRIMARY KEY,
+    EmpName VARCHAR(50),
+    DeptID INT,
+    Salary DECIMAL(10,2),
+    JoinDate DATE
+);
+
+-- Departments Table
+CREATE TABLE Departments (
+    DeptID INT PRIMARY KEY,
+    DeptName VARCHAR(50),
+    Location VARCHAR(50)
+);
+
+-- Projects Table
+CREATE TABLE Projects (
+    ProjID INT PRIMARY KEY,
+    ProjName VARCHAR(50),
+    DeptID INT,
+    StartDate DATE
+);
+
+-- Insert Data into Departments
+INSERT INTO Departments VALUES
+(1, 'IT', 'Chennai'),
+(2, 'HR', 'Bangalore'),
+(3, 'Finance', 'Hyderabad');
+
+-- Insert Data into Employees
+INSERT INTO Employees VALUES
+(101, 'Alice', 1, 60000, '2021-05-10'),
+(102, 'Bob', 1, 75000, '2020-03-15'),
+(103, 'Charlie', 2, 50000, '2022-01-20'),
+(104, 'David', 3, 80000, '2019-07-18'),
+(105, 'Eve', 1, 65000, '2021-10-05');
+
+-- Insert Data into Projects
+INSERT INTO Projects VALUES
+(1001, 'ERP Upgrade', 1, '2023-01-01'),
+(1002, 'Recruitment Drive', 2, '2023-02-15'),
+(1003, 'Budget Analysis', 3, '2023-03-01'),
+(1004, 'Cloud Migration', 1, '2023-05-01');
+
+
+1.Display all employees.
+
+2.Show only EmpName and Salary of all employees.
+
+3.List employees whose salary is greater than 60000.
+
+4.Find employees who joined after 2021-01-01.
+
+5.Show employees from department IT.
+
+6.Find employees with salary between 60000 and 75000.
+
+7.List employees whose name starts with A.
+
+8.Show employees in ascending order of salary.
+
+9.Count the total number of employees.
+
+10.Find the maximum salary in the company.
+
+11.Show employee names, department names, and project names.
+
+12.List all departments with their employees (even if no employees are assigned).
+
+13.Show projects and employees working in them (match by department).
+
+14.Find employees earning more than the average salary of their department.
+
+15.Show the total salary paid per department.
+
+16.List the number of projects per department.
+
+17.Find employees who do not have any project.
+
+18.Show employees along with their project start date.
+
+19.Display the department with the highest average salary.
+
+20.List employees who joined in the same year.
